@@ -262,11 +262,11 @@ class BackwardsInvocation(Generic[T], ABC):
                 headers=headers,
                 content=payload,
                 timeout=(
-                    300,
-                    300,
-                    300,
-                    300,
-                ),  # 300 seconds for connection, read, write, and pool
+                    720,
+                    720,
+                    720,
+                    720,
+                ),  # 720 seconds for connection, read, write, and pool
             ) as response,
         ):
 
